@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable=0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="import" href="/garland.html">
     <title>adaptive</title>
 </head>
 <body>
 <div class="wrapper">
     <main class="page">
-<script>
-      var link = document.querySelector('link[rel=import]');
-      var content = link.import.querySelector('#intro-dm');
-      document.body.appendChild(content.cloneNode(true));
-    </script>
+<div id="garland">
+        <div id="garland__top_row">
+            <span class="led blue"></span>
+        </div>
+        <span id="line"></span>
+        <div id="garland__bottom_row"> 
+        </div>
+    </div>
 <header class="header">
         <div class="header__row">
             <nav class="header__menu menu">
