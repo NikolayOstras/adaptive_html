@@ -1,0 +1,101 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.body{
+    max-height: vh;
+    box-sizing: padding-box;
+}
+#garland{
+    background-color: gray;
+    height: 250px;
+    width: 100%;
+    padding-top: 20px;
+}
+#line{
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+}
+.led{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #c9c9c9;
+    background-color: rgba(186, 186, 186, 0.1); 
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+}
+#garland__top_row{
+    display: flex;
+    justify-content: space-between;
+}
+#garland__bottom_row{
+    display: flex;
+    justify-content: space-around;
+}
+#garland__bottom_row img{
+    transform: rotate(180deg);
+}
+.red{
+    animation-name: glow_red;
+}
+.blue{
+    animation-name: glow_blue;
+}
+.green{
+    animation-name: glow_green;
+}
+@keyframes glow_blue{
+    from{
+        border: 1px solid #c9c9c9;
+        background-color: rgba(186, 186, 186, 0.1); 
+    }
+    50%{
+        box-shadow: 0 0 30px #24ccff;
+        background-color: #24ccff;
+        border-style:none;
+        filter: blur(3px);
+    }
+    to{
+        border: 1px solid #c9c9c9;
+        background-color: rgba(186, 186, 186, 0.1); 
+    }
+}
+@keyframes glow_red{
+    from{
+        border: 1px solid #c9c9c9;
+        background-color: rgba(186, 186, 186, 0.1); 
+    }
+    50%{
+        box-shadow: 0 0 30px #ff2424;
+        background-color: #ff2424;
+        border-style:none;
+        filter: blur(3px);
+    }
+    to{
+        border: 1px solid #c9c9c9;
+        background-color: rgba(186, 186, 186, 0.1); 
+    }
+}
+@keyframes glow_green{
+    from{
+        border: 1px solid #c9c9c9;
+        background-color: rgba(186, 186, 186, 0.1); 
+    }
+    50%{
+        box-shadow: 0 0 30px #24ff62;
+        background-color: #24ff62;
+        border-style:none;
+        filter: blur(3px);
+    }
+    to{
+            border: 1px solid #c9c9c9;
+            background-color: rgba(186, 186, 186, 0.1);
+        }
+}
+
